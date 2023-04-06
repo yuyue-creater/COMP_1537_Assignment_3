@@ -60,6 +60,7 @@ app.post('/search', async (req, res) => {
                 loves: { $in: ["carrot"] },
             }
         }
+        
         const result = await unicornModel.find(selectionArgument, projectionArgument);
         res.json(result);
     }
