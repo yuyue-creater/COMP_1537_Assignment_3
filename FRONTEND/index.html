@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <h1>Search for Unicorn by name</h1>
+    Search for a Unicorn by name
+    <input type="text" id="nameSearchInput" placeholder="Search for a Unicorn by name">
+    <button id="nameSearchButton">submit</button>
+
+    <h1>Or, Search for Unicorn by Weight</h1>
+    Unicorn weight
+    <input type="text" id="minWeightInput" placeholder="Enter lowest weight">
+    and
+    <input type="text" id="maxWeightInput" placeholder="Enter highest weight">
+    <button id="weightSearchBtn">submit</button>
+
+
+    <h1>Or, Search for Unicorn by Fav. food</h1>
+    Unicorn Food List
+    <br>
+    <label for="searchApple">Apple</label>
+    <input type="checkbox" id="searchApple" value="apple">
+    <label for="searchCarrot">Carrot</label>
+    <input type="checkbox" id="searchCarrot" value="carrot">
+    <button id="fruitSearchBtn">submit</button>
+
+    <h1>Filters/Projection</h1>
+    <label for="filterName">Name</label>
+    <input type="checkbox" id="filterName" value="name">
+    <label for="filterWeight">weight</label>
+    <input type="checkbox" id="filterWeight" value="weight">
+
+    <div id="searchResults"></div>
+
+</body>
+
+</html>
